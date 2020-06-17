@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+</style>
+<script>
+	function reset(){	
+	var mijngetal = 9;
+}
+
+	function start(){
+	var uitkomst = mijngetal * mijngetal;
+	mijngetal += 1;
+	mijngetal ++;
+	console.log(mijngetal);
+
+	if(mijngetal == 23) {
+		alert("het is 23");
+ }
+
+</script>
+</head>
+<body>
+	<input type = "button" onlclick = "start()" value = "klik mij">
+	<input type = "button" onlclick = "reset()" value = "reset">
+</body>
+</html>
+
+
+
+
+
+
+<html>
+<head>
+<style>
+</style>
+<script>
+		var change = true;
+		function start(){
+		if(change)
+			console.log("geel")
+	}else{
+	     console.log("rood")
+}
+		
+
+
+</script>
+</head>
+<body>
+	<input type = "button" onlclick = "start()" value = "klik mij">
+	<input type = "button" onlclick = "reset()" value = "reset">
+</body>
+</html>
+
+
+
+<html>
+<head>
+<style>
+</style>
+<script>
+
+type number:
+<input type=number id="numberinvoer" >
+<input type=button value="Klik maar" onclick=proberen()>
+
+		var getal = document.getElementById("numberinvoer").value
+	function start(){
+		for(var x = 0; x <= getal: x++);
+		console.log("dit is het")
+
+
+</script>
+</head>
+<body>
+	<input type = "button" onlclick = "start()" value = "klik mij">
+	<input type = "button" onlclick = "reset()" value = "reset">
+</body>
+</html>
+
+
+
+
+
+
+
+var getallen = [6,9,33,4,7,77,34,21];
+
+	var weekdagen = ["maandag","dinsdag","woensdag","donderdag","vrijdag"];
+//	console.log(getallen[2]);
+	getallen[1] = 66;
+//	console.log(getallen[1]);
+	for(var s = 0 ; s < getallen.length ; s++){
+		console.log(getallen[s]);
+
+	}
+	for(var s = 0 ; s < weekdagen.length ; s++){
+		console.log(weekdagen[s]);
+
+	}
+}
+
+</script>
+</head>
+<body>
+Tel tot: <input type="number" id="ingevoerd">
+<input type="button" onclick="start()" value="Kijk mij!">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

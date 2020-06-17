@@ -1,0 +1,48 @@
+<html>
+
+<!-- css -->
+<style>
+	b{
+		background-color : rgba(255, 0, 0, 0.637);
+		font-size: 20px;
+	}
+	td{
+		border: 2px solid blue;
+   		width: 30px;
+		height:30px;
+	}
+</style>
+<!-- javascript -->
+<script>
+	function Reset_game() {
+  document.getElementById("denaam").Reset();
+	}
+	function proberen(){
+		var mijnvar = document.getElementById("jojo").value;
+		document.getElementById("jojo").innerHTML = mijnvar;
+	}
+	function vakjeVullen(vakjeid){   
+		var elem = document.getElementById(vakjeid);
+		elem.bgColor = 'red';
+		elem.style.border = '5px solid green';
+	
+	}
+
+</script>
+
+
+
+Geef uw naam:
+<input type=text id="denaam" >
+<input type=button value="Klik maar" onclick=proberen()>
+<input type=button value="Reset" onclick=Reset_game()>
+
+Welkom: <b  id="jojo" > vul je naam in </b>
+
+<table>
+<tr><td id="vakje00" onclick="vakjeVullen('vakje00')"></td><td id="vakje01" onclick="vakjeVullen('vakje01')"></td></tr>
+<tr><td id="vakje10" onclick="vakjeVullen('vakje10')"></td><td id="vakje11" onclick="vakjeVullen('vakje11')"></td></tr>
+<tr><td id="vakje00" onclick="vakjeVullen('vakje00')"></td><td id="vakje01" onclick="vakjeVullen('vakje01')"></td></tr>
+<tr><td id="vakje10" onclick="vakjeVullen('vakje10')"></td><td id="vakje11" onclick="vakjeVullen('vakje11')"></td></tr>
+</table>
+</html>

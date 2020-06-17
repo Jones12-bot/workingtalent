@@ -1,0 +1,125 @@
+<html>
+<head>
+<!-- css -->
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+  
+  padding: 5px;
+}
+.square {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  color: white; 
+  text-align: center;
+}
+
+.square:hover {
+  background-color:yellow;
+}
+
+.clicked {
+  background-color: red;
+
+</style>
+
+<!-- javascript-->
+<script>
+function proberen(){
+		var mijnvar = document.getElementById("denaam").value;
+		document.getElementById("wishluck").innerHTML = mijnvar;
+		;
+	}
+
+
+
+  function changeColor() {
+    const $this = $(this);
+  if ($this.hasClass("clicked")) {
+    $this.removeClass("clicked")
+  } else {
+    $this.addClass("clicked");
+  }
+}
+
+
+</script>
+
+name:
+<input type=text id="denaam" >
+<input type=button value="Klik hier" onclick=proberen()>
+
+<hr>
+
+Success
+<b  id="wishluck"   onclick="proberen()" >  </b>
+
+
+
+
+</head>
+
+
+<h2>Click to start</h2>
+
+<!-- A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.
+Direct child element(s) of the grid container automatically becomes grid items. -->
+
+
+
+<div class="grid-container">
+  <div class="square">1</div>
+  <div class="square">2</div>
+  <div class="square">3</div>  
+  <div class="square">4</div>
+  <div class="square">5</div>
+  <div class="square">6</div>  
+  <div class="square">7</div>
+  <div class="square">8</div>
+  <div class="square">9</div>
+  <div class="square">10</div>
+  <div class="square">11</div>
+  <div class="square">12</div>  
+  <div class="square">13</div>
+  <div class="square">14</div>
+  <div class="square">15</div>  
+  <div class="square">16</div>
+  <div class="square">17</div>
+  <div class="square">18</div>  
+  <div class="square">19</div>
+  <div class="square">20</div>
+  <div class="square">21</div>  
+  <div class="square">22</div>
+  <div class="square">23</div>
+  <div class="square">24</div>  
+  <div class="square">25</div>
+  <div class="square">26</div>
+  <div class="square">27</div> 
+  <div class="square">28</div>
+  <div class="square">29</div>
+  <div class="square">30</div>  
+  <div class="square">31</div>
+  <div class="square">32</div>
+  <div class="square">33</div>  
+  <div class="square">34</div>
+  <div class="square">35</div>
+  <div class="square">36</div>
+  <div class="square">37</div>
+  <div class="square">38</div>
+  <div class="square">39</div>  
+  <div class="square">40</div>
+  <div class="square">41</div>
+  <div class="square">42</div>  
+
+
+
+   
+</div>
+
+</body>
+
+</html>} 
