@@ -4,39 +4,48 @@
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
-  grid-template-rows: 50px 50px 50px;
-  
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px;
   padding: 5px;
 }
-.square {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 2px solid rgba(0, 0, 0, 0.8);
+
+.item {
+  background-color: white;
+  border: 2px solid black;
   padding: 10px;
   font-size: 30px;
   color: white; 
   text-align: center;
 }
 
-.square:hover {
+gridcolumn1 {grid-area: 1 / 8 / 15 / 22 / 29 / 36};
+gridcolumn2 {grid-area: 2 / 9 / 16 / 23 / 30 / 37};
+gridcolumn3 {grid-area: 3 / 10 / 17 / 24 / 31 / 38};
+gridcolumn4 {grid-area: 4 / 11 / 18 / 25 / 32 / 39};
+gridcolumn5 {grid-area: 5 / 12 / 19 / 26 / 33 / 40};
+gridcolumn6 {grid-area: 6 / 13 / 20 / 27 / 34 / 41};
+gridcolumn7 {grid-area: 7 / 14 / 21 / 28 / 35 / 42};
+
+
+.item:hover div{
   background-color:yellow;
 }
 
-.clicked {
+.item.clicked {
   background-color: red;
 
 </style>
 
 <!-- javascript-->
 <script>
+  
+
+
 function proberen(){
 		var mijnvar = document.getElementById("denaam").value;
 		document.getElementById("wishluck").innerHTML = mijnvar;
-		;
 	}
-
-
-
+  
   function changeColor() {
     const $this = $(this);
   if ($this.hasClass("clicked")) {
@@ -49,7 +58,7 @@ function proberen(){
 
 </script>
 
-name:
+Geef Naam:
 <input type=text id="denaam" >
 <input type=button value="Klik hier" onclick=proberen()>
 
@@ -59,67 +68,60 @@ Success
 <b  id="wishluck"   onclick="proberen()" >  </b>
 
 
-
-
 </head>
-
 
 <h2>Click to start</h2>
 
 <!-- A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.
 Direct child element(s) of the grid container automatically becomes grid items. -->
 
-
-
 <div class="grid-container">
-  <div class="square">1</div>
-  <div class="square">2</div>
-  <div class="square">3</div>  
-  <div class="square">4</div>
-  <div class="square">5</div>
-  <div class="square">6</div>  
-  <div class="square">7</div>
-  <div class="square">8</div>
-  <div class="square">9</div>
-  <div class="square">10</div>
-  <div class="square">11</div>
-  <div class="square">12</div>  
-  <div class="square">13</div>
-  <div class="square">14</div>
-  <div class="square">15</div>  
-  <div class="square">16</div>
-  <div class="square">17</div>
-  <div class="square">18</div>  
-  <div class="square">19</div>
-  <div class="square">20</div>
-  <div class="square">21</div>  
-  <div class="square">22</div>
-  <div class="square">23</div>
-  <div class="square">24</div>  
-  <div class="square">25</div>
-  <div class="square">26</div>
-  <div class="square">27</div> 
-  <div class="square">28</div>
-  <div class="square">29</div>
-  <div class="square">30</div>  
-  <div class="square">31</div>
-  <div class="square">32</div>
-  <div class="square">33</div>  
-  <div class="square">34</div>
-  <div class="square">35</div>
-  <div class="square">36</div>
-  <div class="square">37</div>
-  <div class="square">38</div>
-  <div class="square">39</div>  
-  <div class="square">40</div>
-  <div class="square">41</div>
-  <div class="square">42</div>  
-
-
-
-   
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>  
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>  
+  <div class="item">7</div>
+  <div class="item">8</div>
+  <div class="item">9</div>
+  <div class="item">10</div>
+  <div class="item">11</div>
+  <div class="item">12</div>  
+  <div class="item">13</div>
+  <div class="item">14</div>
+  <div class="item">15</div>  
+  <div class="item">16</div>
+  <div class="item">17</div>
+  <div class="item">18</div>  
+  <div class="item">19</div>
+  <div class="item">20</div>
+  <div class="item">21</div>  
+  <div class="item">22</div>
+  <div class="item">23</div>
+  <div class="item">24</div>  
+  <div class="item">25</div>
+  <div class="item">26</div>
+  <div class="item">27</div> 
+  <div class="item">28</div>
+  <div class="item">29</div>
+  <div class="item">30</div>  
+  <div class="item">31</div>
+  <div class="item">32</div>
+  <div class="item">33</div>  
+  <div class="item">34</div>
+  <div class="item">35</div>
+  <div class="item">36</div>
+  <div class="item">37</div>
+  <div class="item">38</div>
+  <div class="item">39</div>  
+  <div class="item">40</div>
+  <div class="item">41</div>
+  <div class="item">42</div>  
 </div>
+
+
 
 </body>
 
-</html>} 
+</html> 
