@@ -11,9 +11,9 @@
 
 .item {
   background-color: white;
-  border: 2px solid black;
+  border: 5px solid black;
   padding: 10px;
-  font-size: 30px;
+  font-size: 40px;
   color: white; 
   text-align: center;
 }
@@ -27,21 +27,19 @@ gridcolumn6 {grid-area: 6 / 13 / 20 / 27 / 34 / 41};
 gridcolumn7 {grid-area: 7 / 14 / 21 / 28 / 35 / 42};
 
 
-.item:hover div{
+.item:hover::after {
   background-color:yellow;
 }
 
-.item.clicked {
+.div.clicked {
   background-color: red;
 
 </style>
 
 <!-- javascript-->
 <script>
-  
 
-
-function proberen(){
+function getname(){
 		var mijnvar = document.getElementById("denaam").value;
 		document.getElementById("wishluck").innerHTML = mijnvar;
 	}
@@ -58,14 +56,16 @@ function proberen(){
 
 </script>
 
+<h1> VIER OP EEN RIJ </h1>
+
 Geef Naam:
 <input type=text id="denaam" >
-<input type=button value="Klik hier" onclick=proberen()>
+<input type=button value="Klik hier" onclick=getname()>
 
 <hr>
 
 Success
-<b  id="wishluck"   onclick="proberen()" >  </b>
+<b  id="wishluck"   onclick="getname()" >  </b>
 
 
 </head>
